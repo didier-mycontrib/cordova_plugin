@@ -1,7 +1,7 @@
 cd /d "%~dp0"
 git add *
 git commit -a -m "nouvelle version"
-REM git remote add gitHubOriginCordovaPlugin https://didier-mycontrib:gh14.....sm..x!@github.com/didier-mycontrib/cordova_plugin.git
+REM git remote add gitHubOriginCordovaPlugin https://didier-mycontrib:gh14.....sm..x@github.com/didier-mycontrib/cordova_plugin.git
 git push -u gitHubOriginCordovaPlugin master
 pause
 
