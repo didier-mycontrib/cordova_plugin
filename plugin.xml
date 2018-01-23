@@ -1,22 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?> 
 <plugin xmlns="http://cordova.apache.org/ns/plugins/1.0"
-           id="org.apache.cordova.test.echo"      version="0.1.0">
+           id="org.xyz.cordova.plugin.echo"      version="0.1.0">
+     <!-- id devant etre unique pour chaque plugin -->
     <name>Echo</name>
   <description>Cordova Echo Plugin</description>    <license>Apache 2.0</license>
    <keywords>echo , "ecosystem:cordova", "cordova-android", "cordova-ios"  </keywords>
+   <repo>https://github.com/didier-mycontrib/cordova_plugin.git</repo>
 
     <js-module src="www/echo.js" name="echo">
-        <clobbers target="cordova.echo" />
+        <clobbers target="cordova.echo" /> <!-- future utilisation dans projet -->
     </js-module>
 
     <!-- android -->
     <platform name="android">
         <config-file target="res/xml/config.xml" parent="/*">
             <feature name="Echo" >
-                <param name="android-package" value="org.apache.cordova.plugin.Echo"/>
+                <param name="android-package" value="org.xyz.cordova.plugin.Echo"/>
             </feature>
         </config-file>
-        <source-file src="src/android/Echo.java" target-dir="src/org/apache/cordova/plugin" />
+        <source-file src="src/android/Echo.java" target-dir="src/org/xyz/cordova/plugin" />
     </platform>
  <!-- ios -->
  <!--
